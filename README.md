@@ -36,7 +36,7 @@ Six pages, built in this order:
 6. Import the theme (Section 5): View -> Themes -> Browse for themes.
 7. Build each page using the canvas layout and visual tables in Section 6.
 8. Apply conditional formatting (Section 8) and sync slicers across pages.
-9. Save as `ThreadMetrics_FP&A_Dashboard.pbix`.
+9. Save as `dashboard.pbix`.
 
 ## Data notes
 
