@@ -1,8 +1,8 @@
 # E-Commerce-Financial-Performance-Analysis
 
-A finance-grade Power BI dashboard for a clothing startup, built from raw transaction data plus pre-aggregated SQL outputs (channel efficiency, margin erosion, returns) and a 5-year 3-statement forecast model.
+A finance-grade Power BI dashboard for a clothing startup, built from raw transaction data plus pre-aggregated SQL outputs (channel efficiency, margin erosion, returns) and a 5-year forecast model.
 
-> This repo contains the data, DAX, Power Query (M), theme, and layout spec needed to rebuild the dashboard from scratch in Power BI Desktop. It does not contain a `.pbix` file — Power BI files have to be built in the Power BI Desktop app itself, not generated headlessly, so the implementation guide below is the build path.
+> This repo contains the data, DAX, Power Query, theme, and layout spec needed to rebuild the dashboard from scratch in Power BI Desktop. 
 
 ## What's in here
 
@@ -29,14 +29,13 @@ Six pages, built in this order:
 ## Quick start
 
 1. Open Power BI Desktop and import the four CSVs and the Excel forecast model using **Get Data**.
-2. Apply the Power Query (M) transforms from `powerbi_dax_complete.md` (Section 2) - these fix data types and strip `$` from currency columns that load as text.
-3. Add the `DateTable` DAX table (Section 4) and mark it as the official date table. Required before any year-over-year measure will calculate.
-4. Build the table relationships listed in Section 2, Step 3.
-5. Create a blank `_Measures` table and paste in the DAX measures (Section 3 - 9 groups).
-6. Import the theme (Section 5): View -> Themes -> Browse for themes.
-7. Build each page using the canvas layout and visual tables in Section 6.
-8. Apply conditional formatting (Section 8) and sync slicers across pages.
-9. Save as `dashboard.pbix`.
+2. Add the `DateTable` DAX table (Section 4) and mark it as the official date table. Required before any year-over-year measure will calculate.
+3. Build the table relationships listed in Section 2, Step 3.
+4. Create a blank `_Measures` table and paste in the DAX measures (Section 3 - 9 groups).
+5. Import the theme (Section 5): View -> Themes -> Browse for themes.
+6. Build each page using the canvas layout and visual tables in Section 6.
+7. Apply conditional formatting (Section 8) and sync slicers across pages.
+8. Save as `dashboard.pbix`.
 
 ## Data notes
 
